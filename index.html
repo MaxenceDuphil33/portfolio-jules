@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ingénieur Arts et Métiers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Portfolio - Jules Maugard</h1>
+            </div>
+            <div class="nav-logo">
+                <img loading="lazy" decoding="async" src="image portfolio 1/logo ensam.png" alt="Logo ENSAM" class="ensam-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#annexe">Annexes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil / Qui suis-je -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-welcome">
+                    Bonjour et bienvenue sur mon portfolio !
+                </p>
+                <p class="hero-intro">
+                    Je m'appelle Jules Maugard et je suis élève ingénieur aux Arts et Métiers. Je m'intéresse particulièrement aux domaines aéronautique et naval, à leurs innovations et aux liens qui les rapprochent.
+                </p>
+                <p class="hero-intro">
+                    Deux univers qui partagent de nombreux principes physiques, où performance, conception et innovation technique se rencontrent pour répondre à des contraintes exigeantes.
+                </p>
+                <p class="hero-quote">
+                    "De l'air à l'eau, deux domaines qui nourrissent ma curiosité pour la technique, la performance et l'innovation."
+                </p>
+
+                <div class="photos-grid">
+                    <div class="photo-card">
+                        <div class="photo-placeholder aviation">
+                            <img loading="eager" fetchpriority="high" decoding="async" src="image portfolio 1/image avion proche.webp" alt="Aviation" class="aviation-image">
+                        </div>
+                        <div class="photo-info">
+                            <h3 class="photo-title">Du BIA à la licence de pilote privé</h3>
+                            <p class="photo-description">Une passion qui m'a permis de découvrir concrètement l'aéronautique, du fonctionnement de l'avion à la pratique du pilotage.</p>
+                            <button class="btn-voir-plus" data-target="aviation-details">Découvrir</button>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-card">
+                        <div class="photo-placeholder wingfoil">
+                            <img loading="eager" fetchpriority="high" decoding="async" src="image portfolio 1/Navigation photo solo.webp" alt="Sport nautique" class="nautique-image">
+                        </div>
+                        <div class="photo-info">
+                            <h3 class="photo-title">Du dériveur au wingfoil, une sensation de vol</h3>
+                            <p class="photo-description">Le vent, la glisse et le plaisir de retrouver sur l'eau des sensations proches du pilotage.</p>
+                            <button class="btn-voir-plus" data-target="nautique-details">Découvrir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Détails aviation (cachés par défaut) -->
+                <div id="aviation-details" class="details-content hidden">
+                    <div class="details-inner">
+                        <h3>Mon expérience aéronautique</h3>
+                        <div class="aviation-large-image">
+                            <img loading="lazy" decoding="async" src="image portfolio 1/image avion large.webp" alt="Aviation large" class="large-aviation-image">
+                        </div>
+                        <p class="image-caption">Photo prise le 04/07/25 après l'atterrissage de ma navigation de 150 Nm lors de la formation du PPL</p>
+                        <div class="aviation-grid">
+                            <div class="aviation-card full-width">
+                                <h4 class="aviation-card-title">Brevet d'Initiation Aéronautique (BIA)</h4>
+                                <p class="aviation-card-text">
+                                    Découverte de l'aéronautique au lycée : aérodynamique, météo, navigation, mécanique. Formation terminée par un vol de découverte qui a été le déclic décisif.
+                                </p>
+                            </div>
+                            <div class="aviation-card full-width">
+                                <h4 class="aviation-card-title">Licence de Pilote Privé (PPL)</h4>
+                                <p class="aviation-card-text">
+                                    Formation exigeante mêlant théorie et pratique&nbsp;: pilotage, aérodynamique, météorologie et navigation.
+                                </p>
+                                <p class="aviation-card-text">
+                                    Après un examen théorique portant sur l'ensemble de ces connaissances, j'ai progressivement mis en pratique les notions apprises et développé mes compétences en pilotage à chaque vol.
+                                </p>
+                                <p class="aviation-card-text">
+                                    Cette progression m'a conduit à réaliser seul une navigation de plus de 150 NM, avant de passer l'examen pratique au terme de 45 heures de vol.
+                                </p>
+                            </div>
+                            <div class="aviation-card full-width">
+                                <h4 class="aviation-card-title">Compétences développées</h4>
+                                <div class="aviation-skills">
+                                    <div class="skill-item">
+                                        <span class="skill-label">Rigueur</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Préparation</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Responsabilité</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Humilité</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Adaptation</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-label">Observation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aviation-card full-width highlight">
+                                <h4 class="aviation-card-title">Résultat</h4>
+                                <p class="aviation-card-text">
+                                    Obtention de la licence PPL. Aujourd'hui, je regarde un avion différemment : passion et plaisir de voler, mais aussi toute la technique et le travail humain qui permettent à une machine de prendre son envol.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn-close" data-close="aviation-details">Fermer</button>
+                    </div>
+                </div>
+
+                <!-- Détails sports nautiques (cachés par défaut) -->
+                <div id="nautique-details" class="details-content hidden">
+                    <div class="details-inner">
+                        <h3>De l'Optimist au wingfoil : entre l'eau et l'air</h3>
+                        <div class="nautique-large-image">
+                            <img loading="lazy" decoding="async" src="image portfolio 1/photoo 470.webp" alt="470 Wingfoil" class="large-nautique-image">
+                        </div>
+                        <div class="aviation-grid">
+                            <div class="aviation-card full-width">
+                                <h4 class="aviation-card-title">Mon expérience</h4>
+                                <p class="aviation-card-text">
+                                    J'ai découvert la voile enfant, en Optimist. J'y ai appris les bases de la navigation, à observer le vent, comprendre le plan d'eau et trouver comment jouer avec les éléments pour avancer.
+                                </p>
+                                <p class="aviation-card-text">
+                                    En grandissant, je suis passé au 470 puis à la planche à voile. J'avais envie de nouvelles sensations, d'aller plus vite et de découvrir d'autres façons de naviguer.
+                                </p>
+                                <p class="aviation-card-text">
+                                    Puis j'ai découvert le wingfoil. Ce qui m'a tout de suite plu, c'est le principe du foil : une aile immergée dans l'eau, qui crée suffisamment de portance pour soulever la planche. Passionné d'aviation, j'ai retrouvé quelque chose de familier dans cette idée, tout en découvrant des sensations nouvelles. Une technologie qui permet de voler sur l'eau, je trouve ça fascinant.
+                                </p>
+                                <p class="aviation-card-text">
+                                    C'est aussi ce qui m'intéresse dans la technique : comprendre un principe, le voir fonctionner concrètement et découvrir comment une innovation peut repousser les limites. Entre l'avion et le wingfoil, je retrouve finalement cette même envie de comprendre ce qui nous permet de voler.
+                                </p>
+                            </div>
+                            <div class="aviation-card full-width">
+                                <h4 class="aviation-card-title">Des innovations sportives aux technologies de demain</h4>
+                                <p class="aviation-card-text">
+                                    Ce qui me fascine dans la course au large, c'est cette recherche permanente de performance. Pour aller toujours plus vite, les ingénieurs repoussent les limites de la technologie. Les foils en sont un bel exemple : développés et perfectionnés dans la voile de compétition, ils ont progressivement trouvé leur place sur d'autres supports nautiques.
+                                </p>
+                                <p class="aviation-card-text">
+                                    Mais l'intérêt de ces innovations ne s'arrête pas au sport. Les matériaux, les formes de coques ou les systèmes développés pour la compétition peuvent ensuite inspirer de nouvelles solutions pour les bateaux de transport, les navires de service ou la plaisance. L'objectif est alors de gagner en efficacité, de réduire les consommations et de faire évoluer la conception des navires.
+                                </p>
+                                <p class="aviation-card-text">
+                                    C'est une démarche que l'on retrouve aussi dans l'aéronautique et le spatial : les contraintes de la compétition et de la recherche poussent les ingénieurs à développer des technologies qui peuvent, par la suite, bénéficier à des applications beaucoup plus larges.
+                                </p>
+                                <p class="aviation-card-text">
+                                    C'est ce qui m'intéresse dans l'ingénierie : partir d'un défi technique, repousser les limites et voir les innovations d'aujourd'hui devenir les solutions de demain.
+                                </p>
+                            </div>
+                            <div class="aviation-card full-width highlight">
+                                <h4 class="aviation-card-title">Entre pratique et théorie</h4>
+                                <p class="aviation-card-text">
+                                    La pratique du wingfoil me permet de mieux comprendre concrètement certains phénomènes physiques que l'on retrouve aussi en aéronautique. Cette expérience sur l'eau complète mes connaissances théoriques et nourrit ma curiosité pour les liens techniques entre les bateaux et les avions.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn-close" data-close="nautique-details">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mes Projets -->
+    <section id="projets" class="section">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            
+            <div class="projects-grid">
+                <!-- Projet OSI 2025 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img loading="lazy" decoding="async" src="image portfolio 1/image mini golf ordi 1.webp" alt="Mini golf OSI" class="project-osi-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Olympiade des Sciences de l'Ingénieurs 2025 - mini golf</h3>
+                        <p class="project-short">Projet d'équipe - Concours OSI</p>
+                        <button class="btn-voir-plus" data-target="osi-details">Découvrir</button>
+                    </div>
+                </div>
+
+                <!-- Projet Toulouse Robot Race 2026 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img loading="lazy" decoding="async" src="image portfolio 1/maquette final.webp" alt="Maquette finale" class="project-robot-image">
+                        <span class="ai-mention">Généré avec l'IA</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Toulouse Robot Race 2026</h3>
+                        <p class="project-short">Projet robotique autonome</p>
+                        <button class="btn-voir-plus" data-target="robot-details">Découvrir</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Détails OSI 2025 -->
+            <div id="osi-details" class="details-content hidden">
+                <div class="details-inner">
+                    <div class="mission-header-info">
+                        <h3>Olympiades des Sciences de l'Ingénieur 2025</h3>
+                        <div class="mission-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Année</span>
+                                <span class="meta-value">2025</span>
+                            </div>
+                            <div class="meta-item highlight-meta">
+                                <span class="meta-label">Résultat</span>
+                                <span class="meta-value">1ère place</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Photos -->
+                    <div class="photos-section">
+                        <h4>Photos du projet</h4>
+                        <div class="photos-scroll">
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/image mini golf ordi 1.webp" alt="Mini golf ordinateur 1">
+                                <span class="photo-caption">Modèle 3D initial du projet</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/syteme méca cotations.PNG" alt="Système méca cotations">
+                                <span class="photo-caption">Système mécanique avec cotation</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/verrin.webp" alt="Vérin" class="zoomed-image">
+                                <span class="photo-caption">Conception d'un des systèmes mécanique</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/verin parcours.webp" alt="Vérin parcours" class="zoomed-image">
+                                <span class="photo-caption">Intégration du système dans le modèle 3D</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/fabrication mini golf .webp" alt="Fabrication">
+                                <span class="photo-caption">Fabrication et assemblage</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/fabrication mini golg.webp" alt="Fabrication">
+                                <span class="photo-caption">Fabrication et assemblage</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/photo mini golf paris.webp" alt="Mini golf Paris">
+                                <span class="photo-caption">Préparation pour la finale à la Cité des Sciences</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/mini golf jury.webp" alt="Présentation jury">
+                                <span class="photo-caption">Présentation jury</span>
+                            </div>
+                        </div>
+                        <p class="scroll-hint">← Faites défiler pour voir toutes les photos →</p>
+                    </div>
+
+                    <div class="mission-grid">
+                        <div class="mission-card-section full-width">
+                            <h4>Contexte & objectif</h4>
+                            <p>Pour les Olympiades des Sciences de l'Ingénieur, nous avons imaginé et réalisé en équipe un mini-golf interactif, démontable et modulable. Pendant plusieurs mois, nous nous sommes énormément investis dans ce projet, sans compter nos heures.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Notre réalisation</h4>
+                            <p>Le parcours était composé de plusieurs systèmes mécaniques actionnés par des vérins électriques. Ils permettaient de modifier certains éléments du parcours entre les parties : obstacles, passages ou trajectoires de la balle. Le joueur pouvait ainsi découvrir des parcours différents et rendre le jeu plus interactif et ludique. L'ensemble du système pouvait fonctionner de manière autonome grâce à des énergies renouvelables. Nous avons également développé un suivi de la balle et du score grâce à l'intelligence artificielle. De mon côté, j'ai principalement travaillé sur la conception des systèmes mécaniques.</p>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Ma contribution</h4>
+                            <p>Conception des systèmes mécaniques et des vérins électriques pour modifier le parcours.</p>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Approche écologique</h4>
+                            <p>Nous avons cherché à donner du sens au projet en réutilisant un maximum de matériaux.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Compétences développées</h4>
+                            <p>Cette expérience nous a appris à réellement travailler en équipe et à développer nos compétences à l'oral pour présenter et défendre notre projet devant différents jurys.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Résultat</h4>
+                            <p>Nous remercions nos professeurs, qui nous ont accompagnés et poussés tout au long du projet. Leur soutien nous a permis d'aller jusqu'à la finale nationale à la Cité des Sciences à Paris, après avoir remporté la 1re place en Normandie, parmi plus de 800 équipes participantes.</p>
+                        </div>
+
+                        <div class="mission-card-section highlight">
+                            <h4>Presse</h4>
+                            <p>Le projet a également fait l'objet d'articles dans la presse locale :</p>
+                            <p><a href="https://www.zegreenweb.com/2025/06/19/stidd/?utm_source=chatgpt.com" target="_blank">Lire l'article sur notre projet</a></p>
+                            <p><a href="https://actu.fr/normandie/le-mesnil-esnard_76429/concours-des-olympiades-a-mesnil-esnard-un-mini-golf-ingenieux-leur-permet-de-gagner-la-finale_62754973.html" target="_blank">Article Actu.fr</a></p>
+                        </div>
+                    </div>
+
+                    <button class="btn-close" data-close="osi-details">Fermer</button>
+                </div>
+            </div>
+
+            <!-- Détails Robot Race 2026 -->
+            <div id="robot-details" class="details-content hidden">
+                <div class="details-inner">
+                    <div class="mission-header-info">
+                        <h3>Toulouse Robot Race 2026</h3>
+                    </div>
+
+                    <!-- Section Photos -->
+                    <div class="photos-section">
+                        <h4>Photos du projet</h4>
+                        <div class="photos-scroll">
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/croquis voiture trr.webp" alt="Croquis du robot">
+                                <span class="photo-caption">Croquis du châssis adapté en fonction des composants</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/screen conception.webp" alt="Conception CAO">
+                                <span class="photo-caption">Conception CAO</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/usinage.webp" alt="Usinage des axes">
+                                <span class="photo-caption">Usinage des axes de direction</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/image 2.webp" alt="Partie informatique code">
+                                <span class="photo-caption">Partie informatique - Code</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/image 3.webp" alt="Fabrication étape 3">
+                                <span class="photo-caption">Teste des composants</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/image 4.webp" alt="Fabrication étape 4">
+                                <span class="photo-caption">Mesure, essai et fiabilisation du robot</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/maquette ia .webp" alt="Maquette IA">
+                                <span class="photo-caption">Maquette IA</span>
+                            </div>
+                        </div>
+                        <p class="scroll-hint">← Faites défiler pour voir toutes les photos →</p>
+                    </div>
+
+                    <div class="mission-grid">
+                        <div class="mission-card-section full-width">
+                            <h4>Contexte & objectif</h4>
+                            <p>La Toulouse Robot Race est une course de robotique où différents robots s'affrontent sur un circuit. La compétition comprend trois catégories : robots multipattes, bipèdes et roulants.</p>
+                            <p>Le principe est simple : chaque robot doit parcourir en totale autonomie un circuit d'environ 25 mètres composé de plusieurs lignes droites et virages, sans aucune intervention humaine pendant la course. Pour se repérer, le robot doit être capable de suivre une ligne noire tracée au sol et de détecter les obstacles présents sur le parcours.</p>
+                            <p>En binôme, nous avons choisi de concevoir un robot roulant, sous la forme d'un petit véhicule autonome. Notre objectif était de développer nous-mêmes un robot capable de comprendre son environnement, de suivre le tracé et d'adapter sa trajectoire pour avancer sur le circuit.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Notre réalisation</h4>
+                            <p>Nous avons commencé par définir les besoins de notre robot et les contraintes du parcours, puis nous avons choisi ensemble les composants les plus adaptés. Nous avons ensuite conçu notre propre châssis afin d'intégrer correctement et en toute sécurité les différents éléments mécaniques et électroniques.</p>
+                            <p>J'étais principalement en charge de la conception mécanique, notamment du châssis et du système de direction, tandis que mon coéquipier était responsable de la partie informatique et de la programmation. Même si nous avions chacun notre domaine principal, nous avons travaillé ensemble sur l'ensemble du projet et appris des compétences de l'autre au fur et à mesure de son avancement.</p>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Outils utilisés</h4>
+                            <ul>
+                                <li>CATIA et Onshape pour la conception</li>
+                                <li>Impression 3D pour le châssis</li>
+                                <li>Usinage pour les axes du système de direction</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Évolution du projet</h4>
+                            <p>Notre robot a évolué tout au long de l'année. Deux soutenances de suivi avec nos professeurs nous ont permis de présenter notre avancement, d'échanger sur nos choix et de profiter de leurs conseils pour améliorer notre solution. Nous avons notamment réalisé plusieurs versions du châssis et fait évoluer le système de direction afin de gagner en précision et en fiabilité.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Compétences développées</h4>
+                            <p>Ce projet nous a permis de suivre les différentes étapes de réalisation d'un prototype : définition du besoin et des contraintes, cahier des charges, choix des composants, croquis, CAO, fabrication, assemblage, programmation, essais et amélioration.</p>
+                            <p>Le travail en binôme nous a également beaucoup apporté. Nous avons appris à nous répartir les responsabilités, à communiquer et à profiter de nos compétences complémentaires. J'ai pu approfondir la conception mécanique tout en découvrant davantage la programmation, et mon coéquipier a également pu participer et apprendre sur la partie mécanique.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Ce que nous retenons</h4>
+                            <p>Ce projet nous a surtout appris l'importance de prendre du recul sur notre travail et de faire évoluer nos solutions. Un système technique fonctionne rarement parfaitement dès sa première version. Les essais permettent de comprendre les défauts, de réfléchir à leurs causes puis de trouver des solutions pour progresser.</p>
+                            <p>Nous avons appris à ne pas nous lancer directement dans la fabrication, mais à commencer par définir clairement les objectifs et les contraintes, réaliser des croquis, concevoir une solution, la fabriquer, la tester puis l'améliorer. Les difficultés rencontrées, notamment sur notre système de direction, ont donc fait pleinement partie de notre apprentissage.</p>
+                        </div>
+
+                        <div class="mission-card-section highlight">
+                            <h4>Résultat final</h4>
+                            <p>Lors de la compétition, notre robot a réussi à parcourir un tours complet soit 25 m en totale autonomie. Ce résultat est venu concrétiser plusieurs mois de conception, de fabrication, d'essais et d'améliorations.</p>
+                        </div>
+                    </div>
+
+                    <button class="btn-close" data-close="robot-details">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Mes Missions -->
+    <section id="missions" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Mes Missions</h2>
+            
+            <div class="missions-grid">
+                <!-- Mission Marine West -->
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <h3>Stage en chantier naval</h3>
+                        <p class="mission-subtitle">Marine West</p>
+                    </div>
+                    <div class="mission-photos">
+                        <div class="mission-photo">
+                            <img loading="lazy" decoding="async" src="image portfolio 1/logo marine west.png" alt="Marine West" class="marine-west-logo">
+                        </div>
+                    </div>
+                    <p class="mission-short">Immersion en chantier naval avec participation à la restauration, à l'entretien et à l'équipement de bateaux, au contact des équipes techniques.</p>
+                    <button class="btn-voir-plus" data-target="marine-details">Découvrir</button>
+                </div>
+
+                <!-- Mission Norvège -->
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <h3>Travail agricole en Norvège</h3>
+                        <p class="mission-subtitle">Une expérience professionnelle à l'étranger</p>
+                    </div>
+                    <div class="mission-photos">
+                        <div class="mission-photo">
+                            <div class="photo-placeholder">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/image drone norvege.webp" alt="Norvège" class="norvege-image">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mission-short">Une expérience de travail en Norvège qui m'a permis de découvrir un nouvel environnement professionnel, de m'adapter à d'autres méthodes de travail et de gagner en autonomie.</p>
+                    <button class="btn-voir-plus" data-target="norvege-details">Découvrir</button>
+                </div>
+            </div>
+
+            <!-- Détails Marine West -->
+            <div id="marine-details" class="details-content hidden">
+                <div class="details-inner">
+                    <div class="mission-header-info">
+                        <h3>Remise en état et remotorisation d'un semi-rigide</h3>
+                        <div class="mission-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Durée</span>
+                                <span class="meta-value">50 h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caractéristiques du bateau -->
+                    <div class="boat-specs">
+                        <h4>Caractéristiques du bateau</h4>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Taille</span>
+                                <span class="spec-value">8 mètres</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Année</span>
+                                <span class="spec-value">2006</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Remotorisation</span>
+                                <span class="spec-value">350 ch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frise chronologique -->
+                    <div class="timeline-section">
+                        <h4>Déroulement du projet</h4>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-number">1</div>
+                                <div class="timeline-content">
+                                    <h5>Diagnostic / Démontage</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-arrow">→</div>
+                            <div class="timeline-item">
+                                <div class="timeline-number">2</div>
+                                <div class="timeline-content">
+                                    <h5>Remise en état</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-arrow">→</div>
+                            <div class="timeline-item">
+                                <div class="timeline-number">3</div>
+                                <div class="timeline-content">
+                                    <h5>Remotorisation</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-arrow">→</div>
+                            <div class="timeline-item">
+                                <div class="timeline-number">4</div>
+                                <div class="timeline-content">
+                                    <h5>Remontage</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-arrow">→</div>
+                            <div class="timeline-item">
+                                <div class="timeline-number">5</div>
+                                <div class="timeline-content">
+                                    <h5>Essais et vérifications</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Photos -->
+                    <div class="photos-section">
+                        <h4>Photos du projet</h4>
+                        <div class="photos-scroll">
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/bateau_restauration.webp" alt="Bateau en cours de restauration">
+                                <span class="photo-caption">Bateau en cours de restauration</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/arrive_moteur.webp" alt="Arrivée du moteur">
+                                <span class="photo-caption">Arrivée du nouveau moteur 350 ch</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/pose_moteur.webp" alt="Montage du moteur">
+                                <span class="photo-caption">Montage du moteur</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/resto_avant.webp" alt="Restauration avant">
+                                <span class="photo-caption">Restauration pièce métal - Avant</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/resto_apres.webp" alt="Restauration après">
+                                <span class="photo-caption">Restauration pièce métal - Après</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/console.webp" alt="Console">
+                                <span class="photo-caption">Console du bateau en cours de restauration avec mise en place des équipements</span>
+                            </div>
+                        </div>
+                        <p class="scroll-hint">← Faites défiler pour voir toutes les photos →</p>
+                    </div>
+
+                    <div class="mission-grid">
+                        <div class="mission-card-section full-width">
+                            <h4>Mission</h4>
+                            <p>Participer à la remise en état d'un semi-rigide d'environ 8 mètres ayant presque entièrement coulé, puis à sa remotorisation avec un moteur hors-bord de 350 ch. Projet réalisé pendant plus d'une semaine aux côtés du chef mécanicien.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Activités</h4>
+                            <p>J'ai participé aux différentes étapes de la remise en état du bateau : démontage et contrôle des équipements, interventions mécaniques et électriques, réparation de certaines parties de la coque et de la carène, préparation et peinture ainsi que quelques travaux d'usinage et d'ajustement.</p>
+                            <p>Une partie importante du projet concernait la remotorisation avec l'installation du nouveau moteur de 350 ch, de son système de direction et des différents équipements associés.</p>
+                            <p>Une fois le bateau remonté, nous avons réalisé une phase de tests et d'essais afin de vérifier le bon fonctionnement du moteur, de la direction, des équipements et de l'ensemble du bateau.</p>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Moyens</h4>
+                            <ul>
+                                <li>Outillage mécanique et électrique professionnel</li>
+                                <li>Matériel de levage et de manutention</li>
+                                <li>Machines d'atelier, tour</li>
+                                <li>Matériel de réparation de coque</li>
+                                <li>Documentation technique</li>
+                                <li>Travail principalement réalisé avec le chef mécanicien</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Contraintes</h4>
+                            <ul>
+                                <li>Le bateau ayant quasiment entièrement coulé, de nombreux éléments devaient être contrôlés ou remis en état</li>
+                                <li>Il fallait intervenir sur plusieurs domaines techniques tout en assurant la fiabilité et la sécurité du bateau avant sa remise en service</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Faits marquants</h4>
+                            <p>C'était l'un des projets les plus complets de mon stage. J'ai pu suivre l'évolution d'un même bateau pendant plus d'une semaine, depuis son arrivée fortement endommagé jusqu'aux essais après sa remise en état et sa remotorisation.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Compétences développées</h4>
+                            <div class="competences-grid">
+                                <div class="competence-item">
+                                    <h5>Savoirs</h5>
+                                    <p>Compréhension du fonctionnement général d'un bateau à moteur et des différentes étapes d'une remise en état et d'une remotorisation.</p>
+                                </div>
+                                <div class="competence-item">
+                                    <h5>Savoir-faire</h5>
+                                    <p>Mécanique, électricité, installation d'équipements, travaux sur la coque, peinture, petits travaux d'usinage, utilisation d'outillage professionnel et participation aux essais de fonctionnement.</p>
+                                </div>
+                                <div class="competence-item">
+                                    <h5>Savoir-être</h5>
+                                    <p>Rigueur, curiosité technique, travail en équipe, capacité d'adaptation et respect des consignes de sécurité.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Résultats personnels</h4>
+                            <p>J'ai participé concrètement à un projet complet faisant intervenir plusieurs domaines techniques. Le travail aux côtés du chef mécanicien m'a permis de gagner en autonomie, de découvrir de nouvelles méthodes et de mieux comprendre le fonctionnement global d'un bateau.</p>
+                        </div>
+
+                        <div class="mission-card-section highlight">
+                            <h4>Ce que j'ai le plus aimé</h4>
+                            <p>La diversité du projet et son côté très concret. J'ai particulièrement apprécié de voir le bateau évoluer au fil des jours et de participer à plusieurs étapes, jusqu'aux essais permettant de vérifier que tout fonctionnait correctement.</p>
+                        </div>
+
+                        <div class="mission-card-section highlight">
+                            <h4>Ce que j'ai le moins aimé</h4>
+                            <p>Certaines étapes de nettoyage et de préparation étaient plus répétitives, mais elles étaient indispensables pour réaliser correctement la suite du travail.</p>
+                        </div>
+                    </div>
+
+                    <button class="btn-close" data-close="marine-details">Fermer</button>
+                </div>
+            </div>
+
+            <!-- Détails Norvège -->
+            <div id="norvege-details" class="details-content hidden">
+                <div class="details-inner">
+                    <div class="mission-header-info">
+                        <h3>FICHE MISSION — Préparation du bois pour l'hiver</h3>
+                        <div class="mission-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Poste</span>
+                                <span class="meta-value">Ouvrier agricole – Mobilité internationale en Norvège</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Photos -->
+                    <div class="photos-section">
+                        <h4>Photos de la mobilité en Norvège</h4>
+                        <div class="photos-scroll">
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/coupe bois .webp" alt="Coupe du bois">
+                                <span class="photo-caption">Coupe du bois</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/rangement bois .webp" alt="Rangement du bois">
+                                <span class="photo-caption">Rangement du bois</span>
+                            </div>
+                            <div class="photo-item">
+                                <img loading="lazy" decoding="async" src="image portfolio 1/drone lac .webp" alt="Vue drone">
+                                <span class="photo-caption">Photo du lac à côté de la ferme</span>
+                            </div>
+                        </div>
+                        <p class="scroll-hint">← Faites défiler pour voir toutes les photos →</p>
+                    </div>
+
+                    <div class="mission-grid">
+                        <div class="mission-card-section">
+                            <h4>Mission</h4>
+                            <p>Préparer et stocker une réserve de bois de chauffage pour la saison hivernale.</p>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Activités</h4>
+                            <p>Mission ponctuelle réalisée sur deux journées&nbsp;:</p>
+                            <ul>
+                                <li>Coupe du bois à la tronçonneuse</li>
+                                <li>Déplacement et manutention des morceaux de bois</li>
+                                <li>Fendage des bûches</li>
+                                <li>Tri et rangement du bois</li>
+                                <li>Stockage pour permettre son séchage et son utilisation pendant l'hiver</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Moyens</h4>
+                            <ul>
+                                <li>Tronçonneuse</li>
+                                <li>Fendeuse à bois</li>
+                                <li>Outils de manutention</li>
+                                <li>Équipements de protection individuelle</li>
+                                <li>Travail réalisé avec les autres personnes présentes à la ferme</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-card-section">
+                            <h4>Contraintes</h4>
+                            <ul>
+                                <li>Travail physique réalisé en extérieur</li>
+                                <li>Manipulation de charges lourdes</li>
+                                <li>Utilisation d'outils et de machines nécessitant de respecter des règles de sécurité</li>
+                                <li>Organisation du stockage pour conserver le bois dans de bonnes conditions</li>
+                                <li>Quantité importante de bois à traiter sur deux journées</li>
+                            </ul>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Faits marquants</h4>
+                            <p>Cette mission m'a permis de participer à une tâche importante dans une ferme norvégienne, où la préparation de l'hiver est essentielle en raison des conditions climatiques. J'ai aussi découvert l'utilisation de matériel que je connaissais peu auparavant.</p>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Compétences développées</h4>
+                            <div class="competences-grid">
+                                <div class="competence-item">
+                                    <h5>Savoirs</h5>
+                                    <p>Compréhension des différentes étapes de préparation et de stockage du bois.</p>
+                                </div>
+                                <div class="competence-item">
+                                    <h5>Savoir-faire</h5>
+                                    <p>Utilisation d'une tronçonneuse et d'une fendeuse, manutention, organisation du stockage et respect des consignes de sécurité.</p>
+                                </div>
+                                <div class="competence-item">
+                                    <h5>Savoir-être</h5>
+                                    <p>Autonomie, travail en équipe, endurance, rigueur et attention à la sécurité.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mission-card-section full-width">
+                            <h4>Résultats personnels</h4>
+                            <p>J'ai participé à l'ensemble du processus, de la coupe jusqu'au rangement du bois. J'ai progressivement gagné en autonomie dans l'utilisation des outils et j'ai contribué concrètement à la préparation de la réserve pour l'hiver.</p>
+                        </div>
+
+                        <div class="mission-card-section highlight">
+                            <h4>Ce que j'ai le plus aimé</h4>
+                            <p>Le côté concret et physique de la mission. J'ai apprécié apprendre à utiliser de nouveaux outils et pouvoir observer directement le résultat du travail réalisé à la fin des deux journées.</p>
+                        </div>
+
+                        <div class="mission-card-section highlight">
+                            <h4>Ce que j'ai le moins aimé</h4>
+                            <p>La répétitivité et l'aspect physique de certaines étapes, notamment la manutention et le rangement du bois sur plusieurs heures.</p>
+                        </div>
+                    </div>
+
+                    <button class="btn-close" data-close="norvege-details">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Annexe -->
+    <section id="annexe" class="section">
+        <div class="container">
+            <h2 class="section-title">Annexes</h2>
+
+            <div class="annexe-content">
+                <h3 class="cv-section-title">Tableau de valorisation d'expérience</h3>
+                <div class="valorisation-tableau">
+                    <table class="tableau-experience">
+                        <thead>
+                            <tr>
+                                <th>Activité</th>
+                                <th>Savoir</th>
+                                <th>Savoir-faire</th>
+                                <th>Savoir-être</th>
+                                <th>Expérience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Stage exécutant – Marine West</td>
+                                <td>Connaissances en mécanique, maintenance nautique et matériaux composites</td>
+                                <td>Réaliser des opérations de maintenance, montage et réparation ; utiliser des outils et machines d'atelier ; intervenir sur des équipements mécaniques et électriques</td>
+                                <td>Rigueur, autonomie, adaptation au travail en équipe</td>
+                                <td>Découverte du fonctionnement d'un chantier naval et participation à des interventions concrètes sur des bateaux et équipements</td>
+                            </tr>
+                            <tr>
+                                <td>Emploi saisonnier Service technique</td>
+                                <td>Installations, sécurité et organisation des événements festifs</td>
+                                <td>Utiliser des outils ; réaliser des opérations de manutention et d'entretien ; respecter des consignes de sécurité</td>
+                                <td>Autonomie, polyvalence, sens pratique</td>
+                                <td>Travail en équipe au sein d'un service technique et réalisation de missions de manutention</td>
+                            </tr>
+                            <tr>
+                                <td>Licence de pilote d'avion – PPL</td>
+                                <td>Principes de mécanique du vol, aérodynamique, météorologie, navigation et réglementation aéronautique</td>
+                                <td>Préparer et réaliser un vol ; naviguer ; analyser les conditions météorologiques ; appliquer des procédures</td>
+                                <td>Rigueur, gestion des responsabilités, prise de décision, anticipation</td>
+                                <td>Formation aéronautique complète avec préparation et réalisation de vols en autonomie supervisée</td>
+                            </tr>
+                            <tr>
+                                <td>Olympiades des Sciences de l'Ingénieur</td>
+                                <td>Principes de conception mécanique, automatisation, électronique et programmation</td>
+                                <td>Concevoir et fabriquer un système ; utiliser la CAO ; prototyper ; tester et améliorer une solution</td>
+                                <td>Travail en équipe, persévérance, créativité, organisation</td>
+                                <td>Conception et réalisation en équipe d'un mini-golf automatisé, de la conception jusqu'aux essais et à la présentation du projet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section CV -->
+                <div class="cv-section cv-section-small">
+                    <h3 class="cv-section-title">Mon CV</h3>
+                    <div class="cv-preview" id="cvPreview">
+                        <div class="cv-header">
+                            <button class="btn-cv-action btn-fullscreen" id="btnFullscreen">
+                                <span class="btn-icon">⛶</span>
+                                Plein écran
+                            </button>
+                            <button class="btn-cv-action btn-download" id="btnDownloadCV">
+                                <span class="btn-icon">⬇</span>
+                                Télécharger
+                            </button>
+                        </div>
+                        <div class="cv-iframe-container">
+                            <iframe src="doc portfolio/cv-jules-maugard.pdf" class="cv-iframe" id="cvIframe"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Documents supplémentaires -->
+                <div class="documents-section">
+                    <h3 class="documents-title">Documents supplémentaires</h3>
+                    <div class="documents-grid">
+                        <a href="doc portfolio/fiche de cadrage stage BA2.pdf" download class="document-download-btn">
+                            <span class="document-text">Télécharger la fiche de cadrage stage technicien</span>
+                            <span class="download-icon">⬇</span>
+                        </a>
+                        <a href="doc portfolio/plaquette_bachelor.pdf" download class="document-download-btn">
+                            <span class="document-text">Télécharger la plaquette de formation</span>
+                            <span class="download-icon">⬇</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Plein Écran CV -->
+    <div id="cvFullscreenModal" class="cv-fullscreen-modal hidden">
+        <div class="cv-fullscreen-header">
+            <h3>Mon CV</h3>
+            <div class="cv-fullscreen-actions">
+                <button class="btn-cv-action btn-download" id="btnDownloadCVFullscreen">
+                    <span class="btn-icon">⬇</span>
+                    Télécharger
+                </button>
+                <button class="btn-cv-action btn-close" id="btnCloseFullscreen">
+                    <span class="btn-icon">✕</span>
+                    Sortir
+                </button>
+            </div>
+        </div>
+        <div class="cv-fullscreen-content">
+            <iframe src="doc portfolio/cv-jules-maugard.pdf" class="cv-iframe-fullscreen"></iframe>
+        </div>
+    </div>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            
+            <div class="contact-content">
+                <div class="contact-item">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <a href="mailto:jules.maugard@ensam.eu">jules.maugard@ensam.eu</a>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <a href="tel:0781774541">07 81 77 45 41</a>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/julesmaugard/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bouton CV flottant -->
+    <div class="cv-button">
+        <a href="doc portfolio/cv-jules-maugard.pdf" download class="btn-cv">
+            Télécharger mon CV
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img loading="lazy" decoding="async" src="image portfolio 1/logo ensam.png" alt="Logo ENSAM" class="footer-logo">
+                <p>&copy; 2026 - Portfolio Ingénieur Arts et Métiers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
